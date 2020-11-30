@@ -1,31 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import backImage from './assets/create.jpg';
+import headerNav from './components/headerNav.js';
+import { BrowserRouter as Router} from "react-router-dom";
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link,
+// } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App"
-    style={{
+      <div className="App"
+      style={{
       background: `url(${backImage})`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat'
+      backgroundRepeat: 'no-repeat',
+      opacity:0.5
     }}
     >
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <headerNav className="App-header"/>
       <div className="App-content">
         what's up
       </div>
