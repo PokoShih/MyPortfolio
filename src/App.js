@@ -9,18 +9,21 @@ export default function App() {
     <div className="App">
       <Router> 
       <Switch>
-            <Route path="/#resume">
+            <Route path='/resume' component = {Resume}>
               <Resume />
             </Route>
             {/* <Route path="/#contact">
                             <Contact />
                         </Route> */}
-            <Route path="/#projects">
+            <Route path="/projects">
               {/* <Projects /> */}
             </Route>
           </Switch>
       </Router>
         <HeaderNav className="App-header" />
+        <container className='App-main'>
+
+        </container>
           
     </div>
   );
